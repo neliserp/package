@@ -1,0 +1,31 @@
+{
+    "name": "neliserp/package",
+    "description": "Template package.",
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "^7.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neliserp\\Package\\": "src/"
+        },
+        "classmap": [
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Neliserp\\Package\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Neliserp\\Package\\PackageServiceProvider"
+            ]
+        }
+    }
+}
